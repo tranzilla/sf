@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{%block body %}
+		<h1>Sliding Fee Calculator</h1>
+		<form action="/calculate" method="post">
+			<input name="name" placeholder="Name" type="text">
+			<select name="household">
+				<option selected disabled value="">Household Size</option>
+				<option value="one">1</option>
+				<option value="two">2</option>
+				<option value="three">3</option>
+				<option value="four">4</option>
+				<option value="five">5</option>
+				<option value="six">6</option>
+				<option value="seven">7</option>
+				<option value="eight">8</option>
+			</select>
+			<input name="income" placeholder="Income" type="text">
+			<input type="submit" value="Calculate">
+		</form>
+{% endblock %}
